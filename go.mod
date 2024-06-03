@@ -3,8 +3,8 @@ module demo25
 go 1.22.3
 
 require (
-	github.com/flipped-aurora/gin-vue-admin/server v0.0.0-20240602131351-53d033821888
 	github.com/gin-gonic/gin v1.10.0
+	github.com/google/uuid v1.3.0
 	gorm.io/driver/mysql v1.5.6
 	gorm.io/gorm v1.25.10
 )

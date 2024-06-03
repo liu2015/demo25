@@ -1,6 +1,7 @@
 package global
 
 import (
+	"demo25/model/jztinfo"
 	"log"
 	"time"
 
@@ -28,7 +29,7 @@ func Gorm() {
 	db1.SetMaxOpenConns(100)
 	db1.SetConnMaxIdleTime(time.Hour)
 
-	err1 := DB.AutoMigrate()
+	err1 := DB.AutoMigrate(jztinfo.Jztinfo{})
 	if err1 != nil {
 		log.Println("失败")
 	}
